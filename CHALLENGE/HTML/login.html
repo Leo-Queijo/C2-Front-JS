@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="./css/login.css">
     <script>
         function validarLogin(event) {
-            event.preventDefault();
-            
+            event.preventDefault(); 
+
+
             const email = document.getElementById("email").value;
             const senha = document.getElementById("senha").value;
-            
 
+                                                        // USAR 123 PARA EMAIL E SENHA
             if (email === "123" && senha === "123") {
 
-                window.location.href = "index.html"; 
+                window.location.href = "index.html";
             } else {
 
                 document.getElementById("erro-mensagem").style.display = "block";
@@ -42,26 +43,25 @@
                     <label for="email">Email:</label>
                     <input type="text" id="email" name="email" placeholder="Digite seu email" required>
                 </div>
-            
+
                 <div class="campo">
                     <label for="senha">Senha:</label>
                     <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
-            
+
                 <div class="campo">
                     <button type="submit">Entrar</button>
                 </div>
-            
+
 
                 <div id="erro-mensagem" style="color: red; display: none;">
                     <p>Email ou senha incorretos. Tente novamente!</p>
                 </div>
-            
+
                 <div class="esqueci-senha">
                     <a href="#">Esqueci minha senha</a>
                 </div>
             </form>
-            
 
             <div class="nao-cadastrado">
                 <p>Ainda não tem cadastro? <a href="./cadastro.html">Clique aqui para se cadastrar</a></p>
